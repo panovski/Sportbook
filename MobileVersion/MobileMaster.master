@@ -1,0 +1,381 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MobileMaster.master.cs" Inherits="MobileVersion_MobileMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<style type="text/css">
+.Tabela_Logo
+{
+    width: 100%;
+    background-color: #3B5998;
+    text-align:left;
+    z-index:99;
+    box-shadow: 3px 3px 3px #ccc;
+    vertical-align:middle;
+    padding: 15px 10px 5px 10px;
+
+}
+
+.MessageLattestFudbalImage
+    {
+        position:absolute;
+        z-index:100;
+        top: 10px;
+        left: 150px;
+    }
+    .MessageLattestKosarkaImage
+    {
+        position:absolute;
+        z-index:100;
+        top: 10px;
+        left: 190px;
+    }
+
+    .MessageLattestRakometImage
+    {
+        position:absolute;
+        z-index:100;
+        top: 10px;
+        left: 230px;
+    }
+    .MessageLattestOstanatoImage
+    {
+        position:absolute;
+        z-index:100;
+        top: 12px;
+        left: 268px;
+        height: 24px;
+    }
+    
+    .MessageLattestFudbalDropDown
+    {
+        background-color:White;
+        box-shadow: 5px 5px 5px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 40px;
+        left: 100px;
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 5px;
+    }
+    .ListBoxItem
+    {
+        box-shadow: 3px 3px 3px #ccc;
+        border-radius: 5px;
+        background-image:url('../Styles/background.jpg');
+        padding: 5px 5px 5px 5px;
+        margin:1px;
+        height:30px;
+        border:1px Dotted #ccc;
+        color:#3B5998;
+    } 
+    .ListBoxItem a
+    {
+        color:#3B5998;
+        text-decoration: none
+    } 
+    .MessageLattestKosarkaDropDown
+    {
+        background-color:White;
+        box-shadow: 5px 5px 5px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 40px;
+        left: 110px;
+        height: 100px;
+        width:100px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 5px;
+    }
+    .MessageLattestRakometDropDown
+    {
+        background-color:White;
+        box-shadow: 5px 5px 5px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 40px;
+        left: 120px;
+        height: 100px;
+        width:100px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 5px;
+    }
+    .MessageLattestOstanatoDropDown
+    {
+        background-color:White;
+        box-shadow: 5px 5px 5px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 40px;
+        left: 130px;
+        height: 100px;
+        width:100px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 5px;
+    }
+    .MessageLattestFudbal
+    {
+        width:12px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 10px;
+        left: 165px;
+        height: 14px;
+        border-radius: 1px;
+    }
+    .MessageLattestKosarka
+    {
+        width:12px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 10px;
+        left: 205px;
+        height: 14px;
+        border-radius: 1px;
+    }
+    .MessageLattestRakomet
+    {
+        width:12px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 10px;
+        left: 245px;
+        height: 14px;
+        border-radius: 1px;
+    }
+    .MessageLattestOstanato
+    {
+        width:12px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 10px;
+        left: 285px;
+        height: 14px;
+        border-radius: 1px;
+    }
+
+</style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div style="width: 100%">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+             </asp:ScriptManager>
+    <div id="Tabela_Logo" class="Tabela_Logo" 
+            
+            style="position: fixed; top: 0px; left: 0px; width: 100%; height: 20px; vertical-align: middle;">
+             <asp:ImageButton ID="imgLogo" runat="server" ImageUrl="~/Images/logo-sb.jpg" 
+                         style="text-align: left" PostBackUrl="~/Default.aspx" 
+                 Height="23px" Width="99px" />
+             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                 
+                 <ContentTemplate>
+                     
+             <asp:ImageButton ID="imgFudbalLattest" runat="server" 
+                 ImageUrl="~/Images/fudbal_topka.png" onclick="imgFudbalLattest_Click" 
+                         CssClass="MessageLattestFudbalImage" />
+             
+             <asp:ImageButton ID="imgKosarkaLattest" runat="server" 
+                 ImageUrl="~/Images/basket_topka.png" 
+                         CssClass="MessageLattestKosarkaImage" onclick="imgKosarkaLattest_Click"/>
+
+             <asp:ImageButton ID="imgRakometLattest" runat="server" 
+                 ImageUrl="~/Images/rakomet_topka.png" 
+                         CssClass="MessageLattestRakometImage" onclick="imgRakometLattest_Click"/>
+
+             <asp:ImageButton ID="imgOstanatoLattest" runat="server" 
+                 ImageUrl="~/Images/ostanati_sportovi.png" 
+                         CssClass="MessageLattestOstanatoImage" onclick="imgOstanatoLattest_Click"/>
+               
+             <asp:Panel ID="pnlDDLFudbal" runat="server" CssClass="MessageLattestFudbalDropDown" 
+                 HorizontalAlign="Left" Visible="False" ScrollBars="Vertical" Width="260px">
+                 <asp:Label ID="lblFudbalLattest0" runat="server" 
+    Text="Фудбал - последни непрочитани вести" Font-Bold="True" ForeColor="#666666" 
+                     style="font-family: Arial; font-size: 8pt"></asp:Label>
+                 <hr />
+                 <asp:Label ID="lblFudbalDDLInfo" runat="server" 
+                     style="font-family: Arial, Helvetica, sans-serif; color: #666666; font-size: x-small" 
+                     Text="Сите вести од оваа категорија Ви се прочитани!" Visible="False"></asp:Label>
+                 <asp:DataList ID="DataList2" runat="server" Width="250px" 
+                     onitemcommand="DataList2_ItemCommand">
+                     <EditItemStyle CssClass="ListBox" />
+                     <ItemTemplate>
+                     <tr <%# TRJavaScript(Container) %> >
+                       <td>
+                         <asp:Panel ID="pnlItem" runat="server" CssClass="ListBoxItem">
+                             <asp:Label ID="lblVest_Id" runat="server" Text='<%# Eval("Vest_Id") %>' 
+                                 Visible="False"></asp:Label>
+                             <asp:LinkButton ID="lnkNaslov" runat="server" onclick="lnkNaslov_Click" 
+                                 style="font-family: Arial, Helvetica, sans-serif; font-size: small" 
+                                 Text='<%# Eval("Naslov").ToString().PadRight(67).Substring(0,67).TrimEnd() %>'></asp:LinkButton>
+                         </asp:Panel>
+                       </td>
+                       </tr>
+                     </ItemTemplate>
+                 </asp:DataList>
+             </asp:Panel>
+   
+   
+   <asp:Panel ID="pnlDDLKosarka" runat="server" CssClass="MessageLattestKosarkaDropDown" 
+                 HorizontalAlign="Left" Visible="False" ScrollBars="Vertical" Width="260px">
+                 <asp:Label ID="lblKosarkaLattest0" runat="server" 
+    Text="Кошарка - последни непрочитани вести" Font-Bold="True" ForeColor="#666666" 
+                     style="font-family: Arial; font-size: 8pt"></asp:Label>
+                 <hr />
+                 <asp:Label ID="lblKosarkaDDLInfo" runat="server" 
+                     style="font-family: Arial, Helvetica, sans-serif; color: #666666; font-size: x-small" 
+                     Text="Сите вести од оваа категорија Ви се прочитани!" Visible="False"></asp:Label>
+                 <asp:DataList ID="DataList3" runat="server" Width="250px" 
+                     onitemcommand="DataList3_ItemCommand">
+                     <EditItemStyle CssClass="ListBox" />
+                     <ItemTemplate>
+                     <tr <%# TRJavaScript(Container) %> >
+                       <td>
+                         <asp:Panel ID="pnlItem0" runat="server" CssClass="ListBoxItem">
+                             <asp:Label ID="lblVest_Id0" runat="server" Text='<%# Eval("Vest_Id") %>' 
+                                 Visible="False"></asp:Label>
+                             <asp:LinkButton ID="lnkNaslov0" runat="server" onclick="lnkNaslov_Click" 
+                                 style="font-family: Arial, Helvetica, sans-serif; font-size: small" 
+                                 
+                                 Text='<%# Eval("Naslov").ToString().PadRight(67).Substring(0,67).TrimEnd() %>'></asp:LinkButton>
+                         </asp:Panel>
+                       </td>
+                       </tr>
+                     </ItemTemplate>
+                 </asp:DataList>
+             </asp:Panel>           
+             
+             <asp:Panel ID="pnlDDLRakomet" runat="server" CssClass="MessageLattestRakometDropDown" 
+                 HorizontalAlign="Left" Visible="False" ScrollBars="Vertical" Width="260px">
+                 <asp:Label ID="lblRakometLattest0" runat="server" 
+    Text="Ракомет - последни непрочитани вести" Font-Bold="True" ForeColor="#666666" 
+                     style="font-family: Arial; font-size: 8pt"></asp:Label>
+                 <hr />
+                 <asp:Label ID="lblRakometDDLInfo" runat="server" 
+                     style="font-family: Arial, Helvetica, sans-serif; color: #666666; font-size: x-small" 
+                     Text="Сите вести од оваа категорија Ви се прочитани!" Visible="False"></asp:Label>
+                 <asp:DataList ID="DataList4" runat="server" Width="250px" 
+                     onitemcommand="DataList4_ItemCommand">
+                     <EditItemStyle CssClass="ListBox" />
+                     <ItemTemplate>
+                      <tr <%# TRJavaScript(Container) %> >
+                       <td>
+                         <asp:Panel ID="pnlItem1" runat="server" CssClass="ListBoxItem">
+                             <asp:Label ID="lblVest_Id1" runat="server" Text='<%# Eval("Vest_Id") %>' 
+                                 Visible="False"></asp:Label>
+                             <asp:LinkButton ID="lnkNaslov1" runat="server" onclick="lnkNaslov_Click" 
+                                 style="font-family: Arial, Helvetica, sans-serif; font-size: small" 
+                                 
+                                 Text='<%# Eval("Naslov").ToString().PadRight(67).Substring(0,67).TrimEnd() %>'></asp:LinkButton>
+                         </asp:Panel>
+                       </td>
+                       </tr>
+                     </ItemTemplate>
+                 </asp:DataList>
+             </asp:Panel>
+
+             <asp:Panel ID="pnlDDLOstanato" runat="server" CssClass="MessageLattestOstanatoDropDown" 
+                 HorizontalAlign="Left" Visible="False" ScrollBars="Vertical" Width="260px">
+                 <asp:Label ID="lblOstanatoLattest0" runat="server" 
+    Text="Останато - последни непрочитани вести" Font-Bold="True" ForeColor="#666666" 
+                     style="font-family: Arial; font-size: 8pt"></asp:Label>
+                 <hr />
+                 <asp:Label ID="lblOstanatoDDLInfo" runat="server" 
+                     style="font-family: Arial, Helvetica, sans-serif; color: #666666; font-size: x-small" 
+                     Text="Сите вести од оваа категорија Ви се прочитани!" Visible="False"></asp:Label>
+                 <asp:DataList ID="DataList5" runat="server" Width="250px">
+                     <EditItemStyle CssClass="ListBox" />
+                     <ItemTemplate>
+                      <tr <%# TRJavaScript(Container) %> >
+                       <td>
+                         <asp:Panel ID="pnlItem2" runat="server" CssClass="ListBoxItem">
+                             <asp:Label ID="lblVest_Id2" runat="server" Text='<%# Eval("Vest_Id") %>' 
+                                 Visible="False"></asp:Label>
+                             <asp:LinkButton ID="lnkNaslov2" runat="server" onclick="lnkNaslov_Click" 
+                                 style="font-family: Arial, Helvetica, sans-serif; font-size: small" 
+                                 
+                                 Text='<%# Eval("Naslov").ToString().PadRight(67).Substring(0,67).TrimEnd() %>'></asp:LinkButton>
+                         </asp:Panel>
+                       </td>
+                       </tr>
+                     </ItemTemplate>
+                 </asp:DataList>
+             </asp:Panel>
+       </ContentTemplate>
+             </asp:UpdatePanel>
+             
+             <asp:Panel ID="pnlFudbalLattest" runat="server" CssClass="MessageLattestFudbal" 
+                 HorizontalAlign="Center">
+                 <asp:Label ID="lblFudbalLattest" runat="server" 
+    Text="99" Font-Bold="True" ForeColor="White" 
+                     style="font-family: Arial; font-size: xx-small"></asp:Label>
+             </asp:Panel>
+
+             <asp:Panel ID="pnlKosarkaLattest" runat="server" CssClass="MessageLattestKosarka" 
+                 HorizontalAlign="Center">
+                 <asp:Label ID="lblKosarkaLattest" runat="server" 
+    Text="99" Font-Bold="True" ForeColor="White" 
+                     style="font-family: Arial; font-size: xx-small"></asp:Label>
+             </asp:Panel>
+
+             <asp:Panel ID="pnlRakometLattest" runat="server" CssClass="MessageLattestRakomet" 
+                 HorizontalAlign="Center">
+                 <asp:Label ID="lblRakometLattest" runat="server" 
+    Text="99" Font-Bold="True" ForeColor="White" 
+                     style="font-family: Arial; font-size: xx-small"></asp:Label>
+             </asp:Panel>
+             
+             <asp:Panel ID="pnlOstanatoLattest" runat="server" CssClass="MessageLattestOstanato" 
+                 HorizontalAlign="Center">
+                 <asp:Label ID="lblOstanatoLattest" runat="server" 
+    Text="99" Font-Bold="True" ForeColor="White" 
+                     style="font-family: Arial; font-size: xx-small"></asp:Label>
+             </asp:Panel>
+             
+    </div>                    
+    
+        <table id="Tabela_Glavna" align="center" cellpadding="0" cellspacing="0" 
+            style="margin-top: 50px; z-index: 1;" >
+            
+                                            <asp:SqlDataSource ID="sqlDSFudbalDDL" runat="server" 
+                                                ConnectionString="<%$ ConnectionStrings:SportbookDBConnectionString %>" 
+                                                SelectCommand="SELECT * FROM [Vest]"></asp:SqlDataSource>
+                                            <asp:SqlDataSource ID="sqlDSRakometDDL" runat="server" 
+                                                ConnectionString="<%$ ConnectionStrings:SportbookDBConnectionString %>" 
+                                                SelectCommand="SELECT * FROM [Vest]"></asp:SqlDataSource>
+                                            <asp:SqlDataSource ID="sqlDSKosarkaDDL" runat="server" 
+                                                ConnectionString="<%$ ConnectionStrings:SportbookDBConnectionString %>" 
+                                                SelectCommand="SELECT * FROM [Vest]"></asp:SqlDataSource>
+                                            <asp:SqlDataSource ID="sqlDSOstanatoDDL" runat="server" 
+                                                ConnectionString="<%$ ConnectionStrings:SportbookDBConnectionString %>" 
+                                                SelectCommand="SELECT * FROM [Vest]"></asp:SqlDataSource>
+  </table>
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <asp:Panel ID="pnlBottom" runat="server" BackColor="#3B5998" 
+            style="font-family: Calibri; color: #FFFFFF">
+            &nbsp;
+            <asp:LinkButton ID="lnkDesktopV" runat="server" onclick="lnkDesktopV_Click1" 
+                style="color: #FFFFFF">Десктоп верзија</asp:LinkButton>
+        </asp:Panel>
+    </div>
+    </form>
+</body>
+</html>

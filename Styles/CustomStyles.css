@@ -1,0 +1,571 @@
+﻿.Tabela_Logo
+{
+    width: 100%;
+    background-color: #3B5998;
+    text-align:left;
+    padding:15px 10px 5px 10px;
+    z-index:99;
+    box-shadow: 3px 3px 3px #ccc;
+    vertical-align:middle;
+}
+.Tabela_Glavna
+{
+   width: 950px;
+}
+.TabelaPozadina
+{
+    position:fixed;
+    z-index:-1;
+    margin-left:-1000px;
+    
+}
+
+.AllSideShadows
+{
+    border: 2px Groove Black;
+        box-shadow:2px 2px 10px 10px #C9C9C9;
+        border-radius: 5px;
+        -webkit-box-shadow:2px 2px 10px 10x #C9C9C9;
+        -moz-box-shadow:2px 2px 10px 10px #C9C9C9;   
+}
+.Shadow
+    {
+        box-shadow: 3px 3px 3px #ccc;
+        border-radius: 5px;
+        
+}
+.DivBloks
+    {
+        box-shadow:2px 2px 10px 6px #ccc;
+        -webkit-box-shadow:2px 2px 5px 5x #ccc;
+        -moz-box-shadow:2px 2px 5px 5px #ccc;  
+        border-radius: 10px;
+       background-color:White;
+        vertical-align:top;
+        z-index:1;
+    }
+.DivBloks2
+    {
+        box-shadow:2px 2px 10px 6px #ccc;
+        -webkit-box-shadow:2px 2px 5px 5x #ccc;
+        -moz-box-shadow:2px 2px 5px 5px #ccc;  
+        border-radius: 10px;
+        vertical-align:top;
+        z-index:1;        
+    }
+.DivBloksLogin
+    {
+        box-shadow:2px 2px 10px 6px #ccc;
+        -webkit-box-shadow:2px 2px 5px 5x #ccc;
+        -moz-box-shadow:2px 2px 5px 5px #ccc;  
+        border-radius: 10px;
+       background-color:#3B5998;
+        vertical-align:top;   
+    }
+.SlideShow
+    {
+        box-shadow:2px 2px 10px 6px #ccc;
+        -webkit-box-shadow:2px 2px 5px 5x #ccc;
+        -moz-box-shadow:2px 2px 5px 5px #ccc; 
+        -khtml-box-shadow:2px 2px 5px 5px #ccc; 
+    }
+ .ListBox
+    {
+        box-shadow:2px 2px 10px 6px #ccc;
+        -webkit-box-shadow:2px 2px 5px 5x #ccc;
+        -moz-box-shadow:2px 2px 5px 5px #ccc;  
+        border-radius: 10px;  
+        border:None;
+        background-color:#eee;
+        padding: 5px 5px 5px 5px;
+    }
+  .ListBox option:hover
+    {
+        background-color:#3B5998;
+        border-radius: 10px;
+        color:White;
+        
+    } 
+    .ListBoxItem
+    {
+        box-shadow: 3px 3px 3px #ccc;
+        border-radius: 5px;
+        background-image:url("background.jpg");
+        padding: 5px 5px 5px 5px;
+        margin:1px;
+        height:30px;
+        border:1px Dotted #ccc;
+        color:#3B5998;
+    } 
+    .ListBoxItem a
+    {
+        color:#3B5998;
+        text-decoration: none
+    } 
+    .ListBoxItem:hover
+    {
+        background:#3B5998;
+        color:White;
+    } 
+    .ListBoxItem:hover a
+    {
+        background:#3B5998;
+        color:White;
+        text-decoration: none
+    }
+    
+
+    
+    .ListBoxItemStyle
+    {
+        box-shadow: 3px 3px 3px #ccc;
+        border-radius: 5px;
+        background-image:url("background.jpg");
+        padding: 2px 2px 2px 2px;
+        margin: -15px 0px 5px 0px;
+        border:1px Dotted #ccc;
+        color:#3B5998;
+    }
+     
+    tFudbal
+    {
+        width:12px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 20px;
+        left: 265px;
+        height: 14px;
+        border-radius: 1px;
+    }
+         
+    .MessageLattestFudbal
+    {
+        width:12px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 20px;
+        left: 265px;
+        height: 14px;
+        border-radius: 1px;
+    }
+    .MessageLattestFudbalImage
+    {
+        position:absolute;
+        z-index:100;
+        top: 25px;
+        left: 250px;
+    }
+    .MessageLattestKosarkaImage
+    {
+        position:absolute;
+        z-index:100;
+        top: 25px;
+        left: 290px;
+    }
+
+    .MessageLattestFudbalDropDown
+    {
+        background-color:White;
+        box-shadow: 5px 5px 5px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 55px;
+        left: 200px;
+        height: 200px;
+        width:240px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 5px;
+    }
+    .Menito
+    {
+        position:absolute;
+        z-index:100;
+        top: 20px;
+        left: 440px;
+        height: 1px;
+}
+    .MenitoLevel1
+    {
+        padding: 10px 10px 10px 10px; 
+    }
+    .MenitoSub
+    {
+        border: 2px Solid White;
+        z-index:100;
+        box-shadow: 5px 5px 5px #ccc;
+        width:200px;
+        padding: 2px 10px 2px 10px;
+        font-size:small;
+        padding-right:5px;
+        
+    }
+    .MessageLattestRakometImage
+    {
+        position:absolute;
+        z-index:100;
+        top: 25px;
+        left: 330px;
+    }
+    .MessageLattestOstanatoImage
+    {
+        position:absolute;
+        z-index:100;
+        top: 27px;
+        left: 368px;
+    height: 24px;
+}
+    .MessageLattestKosarka
+    {
+        width:12px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 20px;
+        left: 305px;
+        height: 14px;
+        border-radius: 1px;
+    }
+    .MessageLattestRakomet
+    {
+        width:12px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 20px;
+        left: 345px;
+        height: 14px;
+        border-radius: 1px;
+    }
+    .MessageLattestOstanato
+    {
+        width:12px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 20px;
+        left: 385px;
+        height: 14px;
+        border-radius: 1px;
+    }
+    .MessageLattestKosarkaDropDown
+    {
+        background-color:White;
+        box-shadow: 5px 5px 5px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 55px;
+        left: 210px;
+        height: 200px;
+        width:240px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 5px;
+    }
+    .MessageLattestRakometDropDown
+    {
+        background-color:White;
+        box-shadow: 5px 5px 5px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 55px;
+        left: 220px;
+        height: 200px;
+        width:240px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 5px;
+    }
+    .MessageLattestOstanatoDropDown
+    {
+        background-color:White;
+        box-shadow: 5px 5px 5px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 55px;
+        left: 230px;
+        height: 200px;
+        width:240px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 5px;
+    }
+    .ButtonBlue
+    {
+        background-color: #3B5998;
+        color:White;
+    text-align: center;
+    font-weight: 700;
+}
+    .ButtonPromeni
+    {
+        position:absolute;
+        z-index:100;
+        top: 20px;
+        left: 1000px;
+        width: 110px;
+        height:25px;
+    }
+    .ButtonLogout
+    {
+        position:absolute;
+        z-index:100;
+        top: 20px;
+        left: 1120px;
+        width: 82px;
+        height:25px;
+    }
+    .TextNotUnderlined
+    {
+        text-decoration: none;
+        font-family: Arial;
+        font-size: small;
+        color: #3B5998;
+    }
+    .TextNotUnderlinedBlack
+    {
+        text-decoration: none;
+        font-family: Arial;
+        font-size: x-small;
+        color: Black;
+    }
+    .ImageCorners
+    {
+        border: 2px Groove Black;
+        box-shadow:1px 1px 1px 1px #C9C9C9;
+        border-radius: 5px;
+        -webkit-box-shadow:1px 1px 1px 1x #C9C9C9;
+        -moz-box-shadow:1px 1px 1px 1px #C9C9C9; 
+    }
+    .ImageFlagTop
+    {
+        position:fixed;
+        top: 20px;
+        left: 1000px;
+        z-index: 99;
+    }
+    .ImageFlagTopVnatre
+    {
+        position:absolute;
+        top: 50px;
+        left: 45px;
+        width: 35px;
+    }
+    .BodyPozadina
+    {   
+        background-color: White;
+        opacity:0.10;
+        -moz-opacity:0.50;
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:100%;
+        z-index : -1;
+    }
+    .VestiLogoImage
+    {
+        position: relative;
+        left:-40px;    
+        top: -5px;
+        z-index: 1;
+    }
+    .GoToHome
+    {
+        position:absolute;
+        z-index:102;
+        top: 20px;
+        left: 1250px;
+        height: 20px;
+        color: White;
+        text-decoration: none;
+}
+
+.pnlNeaktivniVesti
+    {
+        width:20px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 190px;
+        left: 370px;
+        height: 20px;
+        border-radius: 1px;
+    }
+    
+.pnlVestiVoIdinaBroj
+    {
+        width:20px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 190px;
+        left: 500px;
+        height: 20px;
+        border-radius: 1px;
+    }
+
+.pnlPorakiBroj
+    {
+        width:20px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 340px;
+        left: 750px;
+        height: 20px;
+        border-radius: 1px;
+    }
+        
+.Mobile_MessageLattestFudbalImage
+    {
+        position:absolute;
+        z-index:100;
+        top: 25px;
+        left: 250px;
+    }
+    .Mobile_MessageLattestKosarkaImage
+    {
+        position:absolute;
+        z-index:100;
+        top: 25px;
+        left: 290px;
+    }
+
+    .Mobile_MessageLattestFudbalDropDown
+    {
+        background-color:White;
+        box-shadow: 5px 5px 5px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 55px;
+        left: 200px;
+        height: 200px;
+        width:240px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 5px;
+    }
+    .Mobile_MessageLattestRakometImage
+    {
+        position:absolute;
+        z-index:100;
+        top: 25px;
+        left: 330px;
+    }
+    .Mobile_MessageLattestOstanatoImage
+    {
+        position:absolute;
+        z-index:100;
+        top: 27px;
+        left: 368px;
+    height: 24px;
+}
+    .Mobile_MessageLattestKosarka
+    {
+        width:12px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 20px;
+        left: 305px;
+        height: 14px;
+        border-radius: 1px;
+    }
+    .Mobile_MessageLattestRakomet
+    {
+        width:12px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 20px;
+        left: 345px;
+        height: 14px;
+        border-radius: 1px;
+    }
+    .Mobile_MessageLattestOstanato
+    {
+        width:12px;
+        background-color:Red;
+        box-shadow: 1px 1px 1px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 20px;
+        left: 385px;
+        height: 14px;
+        border-radius: 1px;
+    }
+    .Mobile_MessageLattestKosarkaDropDown
+    {
+        background-color:White;
+        box-shadow: 5px 5px 5px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 55px;
+        left: 210px;
+        height: 200px;
+        width:240px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 5px;
+    }
+    .Mobile_MessageLattestRakometDropDown
+    {
+        background-color:White;
+        box-shadow: 5px 5px 5px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 55px;
+        left: 220px;
+        height: 200px;
+        width:240px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 5px;
+    }
+    .Mobile_MessageLattestOstanatoDropDown
+    {
+        background-color:White;
+        box-shadow: 5px 5px 5px #ccc;
+        position:absolute;
+        z-index:100;
+        top: 55px;
+        left: 230px;
+        height: 200px;
+        width:240px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 5px;
+    }
+    
+    .Mobile_Tabela_Logo
+{
+    width: 100%;
+    background-color: #3B5998;
+    text-align:left;
+    padding:15px 10px 5px 10px;
+    z-index:99;
+    box-shadow: 3px 3px 3px #ccc;
+    vertical-align:middle;
+}
+.Mobile_Tabela_Glavna
+{
+   width: 100%; 
+}
+.DivMasterBottom
+{
+        box-shadow: 2px 2px 10px 6px #ccc;
+        -webkit-box-shadow:2px 2px 5px 5x #ccc;
+        -moz-box-shadow:2px 2px 5px 5px #ccc;  
+        border-radius: 10px;
+       background-color:#3B5998;
+       vertical-align:top;
+       color: #FFFFFF;
+       font-style:normal;
+       z-index : 1;
+}
+
